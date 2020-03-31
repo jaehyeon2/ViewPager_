@@ -45,11 +45,11 @@ public class MainActivity extends AppCompatActivity {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    return FirstFragment.newInstance(0);
+                    return ThirdFragment.newInstance();
                 case 1:
-                    return SecondFragment.newInstance(1);
+                    return SecondFragment.newInstance();
                 case 2:
-                    return ThirdFragment.newInstance(2);
+                    return ThirdFragment.newInstance();
                 default:
                     return null;
             }

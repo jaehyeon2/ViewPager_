@@ -6,7 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/indicator"
 
+        tools:ignore="MissingConstraints" />
     <me.relex.circleindicator.CircleIndicator
         android:id="@+id/indicator"
         app:ci_drawable="@drawable/black_radius"
@@ -15,14 +21,6 @@
         app:ci_margin="4dp"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        tools:ignore="MissingConstraints" />
-
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/vpPager"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/indicator"
-
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,20 +8,20 @@ import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
 
 public class FirstFragment extends Fragment {
-    private int page;
+    //private int page;
 
-    public static FirstFragment newInstance(int page){
-        FirstFragment fragment = new FirstFragment();
-        Bundle args = new Bundle();
+    public static ThirdFragment newInstance(/*int page*/){
+        ThirdFragment fragment = new ThirdFragment();
+        /*Bundle args = new Bundle();
         args.putInt("someInt", page);
-        fragment.setArguments(args);
+        fragment.setArguments(args);*/
         return fragment;
     }
 
-    public void onCreate(Bundle savedInstanceState) {
+    /*public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         page = getArguments().getInt("someInt", 0);
-    }
+    }*/
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_first, container, false);

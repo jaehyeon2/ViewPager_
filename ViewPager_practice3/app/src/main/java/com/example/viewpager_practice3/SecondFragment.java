@@ -9,20 +9,20 @@ import androidx.fragment.app.Fragment;
 
 public class SecondFragment extends Fragment {
 
-    private int page;
+    //private int page;
 
-    public static SecondFragment newInstance(int page){
+    public static SecondFragment newInstance(/*int page*/){
         SecondFragment fragment = new SecondFragment();
-        Bundle args = new Bundle();
+        /*Bundle args = new Bundle();
         args.putInt("someInt", page);
-        fragment.setArguments(args);
+        fragment.setArguments(args);*/
         return fragment;
     }
 
-    public void onCreate(Bundle savedInstanceState) {
+    /*public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         page = getArguments().getInt("someInt", 0);
-    }
+    }*/
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_second, container, false);
